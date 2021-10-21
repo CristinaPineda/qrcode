@@ -9,7 +9,7 @@ export default function Routes() {
     <Switch>
       <Route exact path="/" component={ Home } />
       <Route path="/qrgenerator" component={ QrGenerator } />
-      <Route exact path="/" component={ QrReader } />
+      <Route path="/qrreader" component={ QrReader } />
     </Switch>
   )
 }
