@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-// import QRCode from 'qrcode.react';
+import QRCode from 'qrcode.react';
 
 export default function QrGenerator() {
   const [text, setText] = useState();
@@ -21,7 +21,17 @@ export default function QrGenerator() {
           <label for="input-text">Digite o endereço para gerar a imagem de qrcode</label>
           <input onChange={ handleChange } type="text" id="input-text"/>
         </div>
-
+        <div className="div-codegenerator">
+          { text ?
+            <QRCode
+              className="codegenerator"
+              value={text}
+              size={320}
+              includeMargin={true}
+            /> :
+            <p> Sem imagem para QRCode </p>
+          }
+        </div>
       </section>
       <Footer />
     </div>
