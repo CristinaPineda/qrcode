@@ -20,7 +20,7 @@ export default function QrGenerator() {
           <h1>QR Generator</h1>
         </div>
         <div className="div-input">
-          <label for="input-text">
+          <label htmlFor="input-text">
             Digite o endereço para gerar a imagem de qrcode
           </label>
           <input onChange={handleChange} type="text" id="input-text" />

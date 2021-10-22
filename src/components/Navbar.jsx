@@ -2,17 +2,17 @@ import React from "react";
 import Buttons from "./Buttons";
 import TitleNavBar from "./TitleNavBar";
 
-export default function Navbar() {
+export default function NavbarComp() {
   return (
     <div className="div-navbar">
-      <navbar className="navbar">
-        <div className="title-navbar">
+      <nav className="navbar">
+        <div className="title-nav">
           <TitleNavBar />
         </div>
-        <div className="btn-navbar">
+        <div className="btn-nav">
           <Buttons />
         </div>
-      </navbar>
+      </nav>
     </div>
   );
 }
