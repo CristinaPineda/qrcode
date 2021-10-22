@@ -1,9 +1,9 @@
 import React from "react";
-import Buttons from './Buttons';
+import Buttons from "./Buttons";
 import TitleNavBar from "./TitleNavBar";
 
 export default function Navbar() {
-  return(
+  return (
     <div className="div-navbar">
       <navbar className="navbar">
         <div className="title-navbar">
@@ -14,5 +14,5 @@ export default function Navbar() {
         </div>
       </navbar>
     </div>
-  )
+  );
 }
