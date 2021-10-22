@@ -1,11 +1,14 @@
 import React from "react";
 import Buttons from './Buttons';
+import TitleNavBar from "./TitleNavBar";
 
 export default function Navbar() {
   return(
     <div className="div-navbar">
       <navbar className="navbar">
-        <h1>CrisCode</h1>
+        <div className="title-navbar">
+          <TitleNavBar />
+        </div>
         <div className="btn-navbar">
           <Buttons />
         </div>
