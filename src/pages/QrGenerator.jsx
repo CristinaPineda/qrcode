@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import QRCode from 'qrcode.react';
-import noImage from '../images/noImage.png';
+import React, { useState } from "react";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import QRCode from "qrcode.react";
+import noImage from "../images/noImage.png";
+import Download from "../components/Download";
 
 export default function QrGenerator() {
   const [text, setText] = useState();
@@ -11,7 +12,7 @@ export default function QrGenerator() {
     setText(e.target.value);
   };
 
-  return(
+  return (
     <div className="div-generator">
       <Navbar />
       <section>
@@ -19,26 +20,29 @@ export default function QrGenerator() {
           <h1>QR Generator</h1>
         </div>
         <div className="div-input">
-          <label for="input-text">Digite o endereço para gerar a imagem de qrcode</label>
-          <input onChange={ handleChange } type="text" id="input-text"/>
+          <label for="input-text">
+            Digite o endereço para gerar a imagem de qrcode
+          </label>
+          <input onChange={handleChange} type="text" id="input-text" />
         </div>
         <div className="div-codegenerator">
-          { text ?
+          {text ? (
             <QRCode
               className="codegenerator"
               value={text}
               size={320}
               includeMargin={true}
-            /> :
+            />
+          ) : (
             <div>
               <p> Sem imagem para QRCode </p>
-              <img alt="imagem de uma letra x" src={ noImage } width="250"/>
+              <img alt="imagem de uma letra x" src={noImage} width="250" />
             </div>
-
-          }
+          )}
         </div>
+        <div className="download">{text ? <Download /> : ""}</div>
       </section>
       <Footer />
     </div>
-  )
+  );
 }
