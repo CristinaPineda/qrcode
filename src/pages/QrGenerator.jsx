@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import QRCode from 'qrcode.react';
+import noImage from '../images/noImage.png';
 
 export default function QrGenerator() {
   const [text, setText] = useState();
@@ -29,7 +30,11 @@ export default function QrGenerator() {
               size={320}
               includeMargin={true}
             /> :
-            <p> Sem imagem para QRCode </p>
+            <div>
+              <p> Sem imagem para QRCode </p>
+              <img alt="imagem de uma letra x" src={ noImage } width="250"/>
+            </div>
+
           }
         </div>
       </section>
