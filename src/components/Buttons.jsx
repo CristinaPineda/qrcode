@@ -1,6 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router";
 import { useLocation } from "react-router-dom";
+import { GrHomeRounded, GrCamera } from 'react-icons/gr';
+import { MdQrCodeScanner } from 'react-icons/md';
 
 export default function Buttons() {
   const setHistory = useHistory();
@@ -22,16 +24,16 @@ export default function Buttons() {
     if (pathname.includes("/qrgenerator")) {
       return (
         <>
-          <button onClick={handleClick}>Home</button>
-          <button onClick={handleReader}>Leitor Qr</button>
+          <button onClick={handleClick}><GrHomeRounded /></button>
+          <button onClick={handleReader}><GrCamera /></button>
         </>
       );
     }
     if (pathname.includes("/qrreader")) {
       return (
         <>
-          <button onClick={handleClick}>Home</button>
-          <button onClick={handleGenerator}>Gerador Qr</button>
+          <button onClick={handleClick}><GrHomeRounded /></button>
+          <button onClick={handleGenerator}><MdQrCodeScanner /></button>
         </>
       );
     } else {
