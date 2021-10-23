@@ -19,7 +19,7 @@ export const SectionGen = styled.section`
 
   p {
     color: red;
-    font-size: 1.3rem
+    font-size: 1.3rem;
   }
 
   img {
@@ -39,7 +39,7 @@ export const SectionGen = styled.section`
       }
     }
   }
-`
+`;
 
 export const Buttondown = styled.button`
   width: 100px;
@@ -52,4 +52,4 @@ export const Buttondown = styled.button`
     font-size: 1.5rem;
     color: #90f7ea;
   }
-`
+`;

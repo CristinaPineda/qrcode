@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import QRCode from "qrcode.react";
 import noImage from "../images/noImage.png";
 import Download from "../components/Download";
-import { SectionGen } from '../styles/Generator';
+import { SectionGen } from "../styles/Generator";
 
 export default function QrGenerator() {
   const [text, setText] = useState();
@@ -14,7 +14,7 @@ export default function QrGenerator() {
   };
 
   return (
-    <div className="div-generator">
+    <div>
       <Navbar />
       <SectionGen>
         <div className="div-input">
@@ -23,7 +23,7 @@ export default function QrGenerator() {
           </label>
           <input onChange={handleChange} type="text" id="input-text" />
         </div>
-        <div className="div-codegenerator">
+        <div>
           {text ? (
             <QRCode
               className="codegenerator"
@@ -38,7 +38,7 @@ export default function QrGenerator() {
             </div>
           )}
         </div>
-        <div className="download">{text ? <Download /> : ""}</div>
+        <div>{text ? <Download /> : ""}</div>
       </SectionGen>
       <Footer />
     </div>

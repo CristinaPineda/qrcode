@@ -5,9 +5,9 @@ import { Nav } from "../styles/Navbar"
 
 export default function NavbarComp() {
   return (
-    <div className="div-navbar">
-      <Nav className="navbar">
-        <div className="title-nav">
+    <div>
+      <Nav>
+        <div>
           <TitleNavBar />
         </div>
         <div className="btn-nav">
