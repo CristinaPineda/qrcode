@@ -25,10 +25,7 @@ export default function Footer() {
       <div className="footer-details">
         <div className="stacks">
           <h4>Projeto QR Code desenvolvido com:</h4>
-          <div>
-            <p><FaReact className="icons" /></p>
-            <p>React</p>
-          </div>
+          <p><FaReact className="icons" />React</p>
         </div>
         <div class="contact">
           <h4>Contato: (11)947201686</h4>
