@@ -40,15 +40,10 @@ export const FooterApp = styled.footer`
       flex-direction: column;
       align-items: center;
 
-      div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        .icons {
-          margin-right: 5px;
-          font-size: 1.5rem;
-        }
+      .icons {
+        margin-right: 5px;
+        font-size: 1.5rem;
+      }
       }
     }
 
@@ -60,5 +55,14 @@ export const FooterApp = styled.footer`
   .footer-bottom {
     text-align: center;
     margin: auto;
+  }
+
+  @media (min-width: 768px) {
+    margin: 150px auto 0 auto;
+    flex-direction: row;
+
+    .footer-details {
+      margin-top: 10px;
+    }
   }
 `;
