@@ -2,7 +2,7 @@
 
 <imagem da home>
 
-##Leitor e gerador de qrCode
+## Leitor e gerador de qrCode
 
 Esse app possibilita a criação de imagens de qr code e é possivel fazer o download!
 
