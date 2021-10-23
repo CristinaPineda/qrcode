@@ -1,4 +1,6 @@
 import React from "react";
+import { Buttondown } from '../styles/Generator';
+import { BiDownload } from 'react-icons/bi';
 
 export default function Download() {
   const handleDownload = () => {
@@ -15,8 +17,8 @@ export default function Download() {
   };
 
   return (
-    <button className="btn-download" onClick={handleDownload}>
-      download
-    </button>
+    <Buttondown className="btn-download" onClick={handleDownload}>
+      <BiDownload className="icons"/>
+    </Buttondown>
   );
 }

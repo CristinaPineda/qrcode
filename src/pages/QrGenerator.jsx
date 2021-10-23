@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import QRCode from "qrcode.react";
 import noImage from "../images/noImage.png";
 import Download from "../components/Download";
+import { SectionGen } from '../styles/Generator';
 
 export default function QrGenerator() {
   const [text, setText] = useState();
@@ -15,13 +16,10 @@ export default function QrGenerator() {
   return (
     <div className="div-generator">
       <Navbar />
-      <section>
-        <div className="title-qrgenerator">
-          <h1>QR Generator</h1>
-        </div>
+      <SectionGen>
         <div className="div-input">
           <label htmlFor="input-text">
-            Digite o endereço para gerar a imagem de qrcode
+            Digite ou cole o endereço para gerar a imagem de qr code
           </label>
           <input onChange={handleChange} type="text" id="input-text" />
         </div>
@@ -35,13 +33,13 @@ export default function QrGenerator() {
             />
           ) : (
             <div>
-              <p> Sem imagem para QRCode </p>
+              <p> Sem imagem de QRCode </p>
               <img alt="imagem de uma letra x" src={noImage} width="250" />
             </div>
           )}
         </div>
         <div className="download">{text ? <Download /> : ""}</div>
-      </section>
+      </SectionGen>
       <Footer />
     </div>
   );

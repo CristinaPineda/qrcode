@@ -30,7 +30,7 @@ export const Nav = styled.nav`
     }
 
     .btn-nav .icons {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-left: 1.5rem;
     }
   }
@@ -46,7 +46,7 @@ export const H2nav = styled.h2`
   }
 
   @media (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .icons {
