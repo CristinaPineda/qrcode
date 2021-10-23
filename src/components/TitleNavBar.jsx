@@ -10,7 +10,7 @@ export default function TitleNavBar() {
       return <h2>QRCode Generator</h2>;
     }
     if (pathname.includes("/qrreader")) {
-      return <h2>QRCode Reader</h2>;
+      return <h2>QRCode Scanner</h2>;
     } else {
       return <h2><GrHomeRounded /></h2>;
     }
