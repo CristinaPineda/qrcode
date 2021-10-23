@@ -1,13 +1,13 @@
 import React from "react";
+import { Headers } from '../styles/Headers';
 
 export default function Header() {
   return (
-    <header className="header">
+    <Headers className="header">
       <h1 className="h1-header">CrisCode</h1>
       <div className="div-header">
-        <p>QRCODE</p>
-        <p>generator || reader</p>
+        <p>Gerador de qr code e scanner</p>
       </div>
-    </header>
+    </Headers>
   );
 }

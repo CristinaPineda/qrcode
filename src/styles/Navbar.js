@@ -16,7 +16,7 @@ export const Nav = styled.nav`
   }
 
   .btn-nav .icons {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #90f7ea;
     margin: 5px 0;
   }
@@ -42,7 +42,7 @@ export const H2nav = styled.h2`
 
   .icons {
     color: #90f7ea;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   @media (min-width: 768px) {

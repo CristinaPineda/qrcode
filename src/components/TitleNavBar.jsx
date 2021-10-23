@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { BiHomeAlt } from 'react-icons/bi';
+import { MdQrCodeScanner } from 'react-icons/md';
 import { H2nav } from '../styles/Navbar';
 
 export default function TitleNavBar() {
@@ -13,7 +13,7 @@ export default function TitleNavBar() {
     if (pathname.includes("/qrreader")) {
       return <H2nav>QRCode Scanner</H2nav>;
     } else {
-      return <H2nav><BiHomeAlt className="icons"/></H2nav>;
+      return <H2nav><MdQrCodeScanner className="icons"/></H2nav>;
     }
   };
 
