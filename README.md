@@ -19,3 +19,9 @@ Projeto desenvolvido em React com o uso dos pacotes:
 
 ## Desenvolvido em Mobile first
 Conceito de desing responsivo onde o projeto primeiro é desenvolvido para aplicações móveis (mobile).
+
+<a href="https://cristinapineda.github.io/qrcode/#/">Acesse a aplicação</a>
+
+<a href="https://cristinapineda.github.io/#/" target="_blank">Conheça meu portifólio</a> <spam>:dart:<spam>
+
+<a href="www.linkedin.com/in/cristina-pineda" target="_blank">Conecte-se comigo no Linkedin</a> <spam>:dart:<spam>
