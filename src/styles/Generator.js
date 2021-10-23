@@ -24,6 +24,7 @@ export const SectionGen = styled.section`
 
   img {
     border: 5px solid red;
+    margin-bottom: 40px;
   }
 
   @media (min-width: 768px) {
