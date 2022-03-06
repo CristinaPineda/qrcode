@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Section = styled.section`
   text-align: center;
@@ -9,7 +9,8 @@ export const Section = styled.section`
     margin: 30px;
   }
 
-  p, a {
+  p,
+  a {
     color: #56f62e;
     margin-bottom: 3px;
     font-size: 1.5rem;
@@ -22,4 +23,4 @@ export const Section = styled.section`
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-`
+`;

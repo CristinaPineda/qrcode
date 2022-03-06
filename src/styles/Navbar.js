@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Nav = styled.nav`
   width: 90%;
@@ -33,23 +33,5 @@ export const Nav = styled.nav`
       font-size: 2.5rem;
       margin-left: 1.5rem;
     }
-  }
-`;
-
-export const H2nav = styled.h2`
-  color: #90f7ea;
-  font-size: 7vw;
-
-  .icons {
-    color: #90f7ea;
-    font-size: 2rem;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 2rem;
-  }
-
-  .icons {
-    font-size: 3rem;
   }
 `;

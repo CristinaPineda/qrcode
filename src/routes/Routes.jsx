@@ -5,11 +5,11 @@ import QrGenerator from '../pages/QrGenerator';
 import QrReader from '../pages/QrReader';
 
 export default function Routes() {
-  return(
+  return (
     <Switch>
-      <Route exact path="/" component={ Home } />
-      <Route path="/qrgenerator" component={ QrGenerator } />
-      <Route path="/qrreader" component={ QrReader } />
+      <Route exact path='/' component={Home} />
+      <Route path='/qrgenerator' component={QrGenerator} />
+      <Route path='/qrreader' component={QrReader} />
     </Switch>
-  )
+  );
 }
